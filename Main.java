@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -107,11 +108,19 @@ public class Main {
             boolean isManager = managerList.stream()
                     .anyMatch(manager -> manager.name.equals(employee.name) && manager.age == employee.age);
 
-            employee.setManager(isManager);
+
             System.out.println(employee.name + " is manager: " + isManager);
         });
 
         System.out.println(employeeList);
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(10);  // Autoboxing: int is automatically converted to Integer
+
+        Integer num = null;  // Valid
+        int value = Integer.parseInt(null);    // Compilation error
+
+
     }
 }
 
