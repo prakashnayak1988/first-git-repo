@@ -23,7 +23,7 @@ throw new IllegalArgumentException("No number found which can find complement in
     }
     public static void main(String args[]){
 
-        int num[]={4,6,8,5,2,3};
+        int num[]={4,6,8,5,2,3,5};
         int target=17;
         int[] result = new TwoElementSum().twoSum(num,target);
         System.out.println("The Sum found and indices are --->"+result[0]+","+result[1]);
